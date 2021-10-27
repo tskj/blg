@@ -11,7 +11,7 @@ const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
       <title>Ikkje funne</title>
-      <Link to='/'>Go home</Link>.
+      <Link to='/'>Dra heim</Link>.
     </main>
   );
 };
