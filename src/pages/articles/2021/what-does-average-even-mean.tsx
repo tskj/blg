@@ -1,6 +1,10 @@
 import * as React from 'react';
-import { className } from '../../../styleTest.css';
+import { Article } from '../../../components/Article';
 
-export default ({}) => {
-  return <div className={className}>hei</div>;
+export default () => {
+  return (
+    <Article title={'What does average even mean?'}>
+      <div>test</div>
+    </Article>
+  );
 };

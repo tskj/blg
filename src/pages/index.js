@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const IndexPage = () => {
-  return <main>HEeeeia</main>;
+  return <main>Hovedside</main>;
 };
 
 export default IndexPage;
