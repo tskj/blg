@@ -33,5 +33,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-vanilla-extract',
+    'gatsby-plugin-react-helmet',
   ],
 };
