@@ -1,8 +1,8 @@
 import { globalStyle } from '@vanilla-extract/css';
-import { backgroundColor, color } from './global.css';
+import { theme } from './global.css';
 
 globalStyle('body', {
   margin: 0,
-  backgroundColor,
-  color,
+  backgroundColor: theme.background,
+  color: theme.text,
 });
