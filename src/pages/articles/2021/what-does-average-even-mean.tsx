@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Article } from '../../../components/Article';
+import { Note } from '../../../components/Note';
 
 export default () => {
   return (
@@ -29,6 +30,13 @@ export default () => {
           the release of Letraset sheets containing Lorem Ipsum passages, and
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
+        </p>
+        <Note>Dette er tilleggsinfo som er verdt å merke seg</Note>
+        <p>
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum
         </p>
       </>
     </Article>

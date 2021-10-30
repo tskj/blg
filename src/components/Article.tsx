@@ -16,12 +16,14 @@ export const Article = ({ title, date, lastModified, children }: Props) => {
       <LoadFonts />
       <div className={style.articleStyle}>
         <h1>{title}</h1>
-        <span className={style.byLine}>{date}</span>
-        <span className={style.modifiedDate}>
-          {lastModified !== date
-            ? `, last modified ${lastModified}`
-            : ', never modified'}
-        </span>
+        <div className={style.justify}>
+          <span className={style.byLine}>{date}</span>
+          <span className={style.modifiedDate}>
+            {lastModified !== date
+              ? `, last modified ${lastModified}`
+              : ', never modified'}
+          </span>
+        </div>
         {children}
       </div>
     </>

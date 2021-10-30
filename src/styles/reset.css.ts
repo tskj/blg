@@ -6,3 +6,7 @@ globalStyle('body', {
   backgroundColor: theme.background,
   color: theme.text,
 });
+
+globalStyle('*', {
+  boxSizing: 'border-box',
+});

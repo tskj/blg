@@ -22,6 +22,7 @@ export const fontFamily_boldText = {
   fontFamily: `'${regularFontName}', sans-serif`,
   fontSize: regularFontSize,
   fontWeight: 400,
+  lineHeight: 1,
 };
 
 export const fontFamily_boldItalicText = {
