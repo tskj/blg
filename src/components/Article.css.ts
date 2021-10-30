@@ -41,6 +41,7 @@ globalStyle(`${articleStyle} p`, {
 });
 
 globalStyle(`${articleStyle} h2`, {
+  marginBottom: 0,
   ...fontFamily_subHeading,
   ...articleJustification,
 });
