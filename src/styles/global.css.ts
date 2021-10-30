@@ -6,6 +6,10 @@ export const theme = {
 };
 
 globalStyle(':root', {
+  vars: {
+    [theme.text]: '#0f0f0f',
+    [theme.background]: '#ddd',
+  },
   '@media': {
     '(prefers-color-scheme: dark)': {
       vars: {
