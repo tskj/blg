@@ -17,11 +17,11 @@ export const Article = ({ title, date, lastModified, children }: Props) => {
       <div className={style.articleStyle}>
         <h1>{title}</h1>
         <span className={style.byLine}>{date}</span>
-        {lastModified !== date && (
-          <span className={style.modifiedDate}>
-            , last modified {lastModified}
-          </span>
-        )}
+        <span className={style.modifiedDate}>
+          {lastModified !== date
+            ? `, last modified ${lastModified}`
+            : ', never modified'}
+        </span>
         {children}
       </div>
     </>

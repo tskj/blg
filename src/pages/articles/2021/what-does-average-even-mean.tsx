@@ -6,7 +6,7 @@ export default () => {
     <Article
       title={'What does average even mean?'}
       date={'2021-10-31'}
-      lastModified={'2021-10-32'}
+      lastModified={'2021-10-31'}
     >
       <>
         <p>
