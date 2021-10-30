@@ -14,7 +14,7 @@ export const articleStyle = style({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  margin: '50px 0',
+  margin: '30px 0',
   width: '100vw',
 });
 
@@ -51,6 +51,17 @@ export const modifiedDate = style({ ...fontFamily_italicText, opacity: 0.7 });
 export const note = style({
   ...fontFamily_boldText,
   backgroundColor: theme.attention,
+  width: '100vw',
+  display: 'flex',
+  justifyContent: 'center',
+  marginTop: '5px',
+  paddingTop: '10px',
+  paddingBottom: '10px',
+});
+
+export const aside = style({
+  ...fontFamily_regularText,
+  backgroundColor: theme.secondary,
   width: '100vw',
   display: 'flex',
   justifyContent: 'center',

@@ -4,6 +4,7 @@ export const theme = {
   text: createVar(),
   background: createVar(),
   attention: createVar(),
+  secondary: createVar(),
 };
 
 globalStyle(':root', {
@@ -16,8 +17,9 @@ globalStyle(':root', {
     '(prefers-color-scheme: dark)': {
       vars: {
         [theme.text]: '#fff',
-        [theme.background]: '#191e24',
+        [theme.background]: '#1e2630',
         [theme.attention]: '#e69915',
+        [theme.secondary]: '#344245',
       },
     },
   },

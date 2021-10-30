@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Article } from '../../../components/Article';
+import { Aside } from '../../../components/Aside';
 import { Note } from '../../../components/Note';
 
 export default () => {
@@ -38,6 +39,10 @@ export default () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum
         </p>
+        <Aside>
+          Dette er tilleggsinfo som kanskje ikkje er så interessant å lese, men
+          det går over fleire linjer og bla blab albablabla l balbl ab ...
+        </Aside>
       </>
     </Article>
   );
