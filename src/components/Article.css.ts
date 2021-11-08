@@ -18,8 +18,12 @@ export const articleStyle = style({
   width: '100vw',
 });
 
-const articleMaxWidth = '700px';
+const articleMaxWidthPx = 700;
+const articleMaxWidth = `${articleMaxWidthPx}px`;
 const articlePadding = '20px';
+
+const asideWidthPx = 200;
+const asideWidth = `${200}px`;
 
 const articleJustification = {
   paddingLeft: articlePadding,
@@ -60,6 +64,8 @@ export const note = style({
   paddingBottom: '10px',
 });
 
+const screenWidthForAside = articleMaxWidthPx + 2 * asideWidthPx;
+
 export const aside = style({
   ...fontFamily_regularText,
   backgroundColor: theme.secondary,
@@ -69,6 +75,18 @@ export const aside = style({
   marginTop: '5px',
   paddingTop: '10px',
   paddingBottom: '10px',
+});
+
+export const justifyOrAside = style({
+  '@media': {
+    [`screen and (min-width: ${screenWidthForAside + 1}px)`]: {
+      position: 'absolute',
+      width: asideWidth,
+    },
+    [`screen and (max-width: ${screenWidthForAside}px)`]: {
+      ...articleJustification,
+    },
+  },
 });
 
 export const flex = style({ display: 'flex', alignItems: 'center' });

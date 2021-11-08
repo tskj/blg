@@ -8,10 +8,8 @@ type Props = {
 export const Aside = ({ children }: Props) => {
   return (
     <div className={style.aside}>
-      <div className={style.justify}>
-        <div className={style.flex}>
-          <div>{children}</div>
-        </div>
+      <div className={style.justifyOrAside}>
+        <div>{children}</div>
       </div>
     </div>
   );
